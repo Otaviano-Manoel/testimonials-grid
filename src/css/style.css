@@ -6,7 +6,7 @@ html {
 }
 
 .background {
-    background-color: hsl(0, 0%, 81%);
+    background-color: hsl(210, 46%, 95%);
     min-height: 100vh;
     max-height: 100%;
     display: flex;
