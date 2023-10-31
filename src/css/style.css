@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+html {
+    font-size: 62.5%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.background {
+    background-color: hsl(0, 0%, 81%);
+    min-height: 100vh;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template: repeat(2, 300px) / repeat(4, 300px);
+    grid-gap: 20px;
+}
+
+.container .menssege {
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+}
+
+.container .menssege .person {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.container .menssege .avatar {
+    border-color: hsl(0, 0%, 100%);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+    margin-right: 20px;
+    height: 40px;
+}
+
+.container .menssege .name {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.3rem;
+}
+
+.container .menssege .verified {
+    color: hsl(0, 0%, 100%, 0.5);
+    font-size: 1.3rem;
+}
+
+.container .menssege .icon {
+    position: absolute;
+    height: 125px;
+    top: 0;
+    right: 100px;
+
+}
+
+.container .menssege .title {
+    color: hsl(0, 0%, 100%);
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.container .menssege .paragraph {
+    color: hsl(0, 0%, 100%, 0.5);
+    font-size: 1.5rem;
+}
+
+
+.menssege.item-1 {
+    background-color: hsl(263, 55%, 52%);
+    grid-area: 1 / 1 / 1 / span 2;
+}
+
+.menssege.item-2 {
+    background-color: hsl(217, 19%, 35%);
+}
+
+.menssege.item-3 {
+    background-color: hsl(210, 46%, 95%);
+}
+
+.menssege.item-4 {
+    background-color: hsl(219, 29%, 14%);
+    grid-area: 2/2/2/span 2;
+}
+
+.menssege.item-5 {
+    background-color: hsl(210, 46%, 95%);
+    grid-area: 1/4/span 2 / 4;
+}
+
+.container .menssege.item-3 .name,
+.container .menssege.item-3 .title,
+.container .menssege.item-5 .name,
+.container .menssege.item-5 .title {
+    color: black;
+}
+
+.container .menssege.item-3 .verified,
+.container .menssege.item-3 .paragraph,
+.container .menssege.item-5 .verified,
+.container .menssege.item-5 .paragraph {
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.attribution{
+    margin-top: 50px;
+    bottom: 25px;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 30px;
+}

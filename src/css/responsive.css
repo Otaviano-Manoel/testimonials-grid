@@ -1,0 +1,25 @@
+@media (max-width: 1275px) {
+
+    .container {
+        grid-template: repeat(5, auto) / repeat(1, minmax(300px, 350px));
+        grid-gap: 20px;
+    }
+
+    .container .menssege .icon {
+        position: absolute;
+        height: 125px;
+        right: 25px;
+    }
+
+    .menssege.item-1 {
+        grid-area: auto;
+    }
+
+    .menssege.item-4 {
+        grid-area: auto;
+    }
+
+    .menssege.item-5 {
+        grid-area: auto;
+    }
+}
