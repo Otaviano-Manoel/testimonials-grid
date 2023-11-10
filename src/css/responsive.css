@@ -1,8 +1,19 @@
-@media (max-width: 1275px) {
-
+@media (max-width: 1024px) {
+    body{
+        padding: 30px;
+    }
     .container {
         grid-template: repeat(5, auto) / repeat(1, minmax(300px, 350px));
         grid-gap: 20px;
+    }
+
+    .container .menssege .title {
+        font-size: 2.22rem;
+    }
+
+    .container .menssege .paragraph {
+        color: hsl(0, 0%, 100%, 0.5);
+        font-size: 1.55rem;
     }
 
     .container .menssege .icon {

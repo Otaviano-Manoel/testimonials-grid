@@ -4,22 +4,22 @@ html {
     font-size: 62.5%;
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
+body{
+    background-color: hsl(0, 0%, 81%);
+}
 
 .background {
-    background-color: hsl(210, 46%, 95%);
     min-height: 100vh;
     max-height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
 }
 
 .container {
     display: grid;
-    grid-template: repeat(2, 300px) / repeat(4, 300px);
-    grid-gap: 20px;
+    grid-template: repeat(2, auto) / repeat(4, 240px);
+    gap: 30px;
 }
 
 .container .menssege {
@@ -31,27 +31,23 @@ html {
 .container .menssege .person {
     display: flex;
     align-items: center;
-    height: 40px;
-    margin-bottom: 15px;
 }
 
-.container .menssege .avatar {
+.container .menssege .person .avatar {
     border-color: hsl(0, 0%, 100%);
     border-width: 2px;
     border-style: solid;
     border-radius: 50%;
-    margin-right: 20px;
     height: 40px;
+    margin-right: 20px;
 }
 
-.container .menssege .name {
+.container .menssege .person .name {
     color: hsl(0, 0%, 100%);
-    font-size: 1.3rem;
 }
 
-.container .menssege .verified {
+.container .menssege .person .verified {
     color: hsl(0, 0%, 100%, 0.5);
-    font-size: 1.3rem;
 }
 
 .container .menssege .icon {
@@ -62,16 +58,18 @@ html {
 
 }
 
+
+
 .container .menssege .title {
     color: hsl(0, 0%, 100%);
-    font-size: 2.3rem;
-    margin-bottom: 15px;
+    font-size: 1.9rem;
+    margin-bottom: 10px;
     position: relative;
 }
 
 .container .menssege .paragraph {
     color: hsl(0, 0%, 100%, 0.5);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 
